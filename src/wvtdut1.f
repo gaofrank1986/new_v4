@@ -12,6 +12,7 @@ C
         PROGRAM WVTDUT1
 	  USE MVAR_MOD
 	  USE PVAR_MOD
+      use io
  
 !
         IMPLICIT   NONE  
@@ -35,6 +36,7 @@ C
 C
 C ----------------------------------------
 C Input data files
+        fd = create_folder()
         OPEN(1, FILE='INPUT/DATIN.txt',      STATUS='OLD') 
         OPEN(2, FILE='INPUT/DATBDMS.txt',    STATUS='OLD') 
         OPEN(3, FILE='INPUT/DATFSMS.txt',    STATUS='OLD') 

@@ -39,6 +39,8 @@ C
 ! NNF:    number of nodes on the free surface
 ! NNTCH:  number of nodes and the centers of element (For plotting by Techplot)
 ! 
+        character(:),allocatable :: fd !output folder
+
         REAL*4 G,RHO,PI,PI4     
         REAL*4 H,AMP,BETA,W1,V 
         REAL*4 WK,TPER

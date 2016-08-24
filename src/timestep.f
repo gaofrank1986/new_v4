@@ -390,8 +390,8 @@ C
 
 	 !NAME='OUTtime\WAVE'//FIRST//'.DAT'
 	 !NAME='OUTtime\WAVE'//FIRST//'.DAT'
-       filename = getfilename("./wave/wave_elev",itime,'.dat')
-       OPEN(102,FILE=filename,STATUS='UNKNOWN')
+       filename = getfilename(fd//"wave_elev",itime,'.dat')
+       OPEN(102,file=filename,STATUS='UNKNOWN')
 
 !        OPEN(9,  FILE='OUTPUT\OUTPUT1.txt',    STATUS='UNKNOWN')
         

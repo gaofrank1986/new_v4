@@ -45,9 +45,10 @@ endif (WIN32)
 
 if (UNIX)
 	if ("${CMAKE_Fortran_COMPILER_ID}" STREQUAL "Intel")
-		set(CMAKE_Fortran_FLAGS "-stand -openmp -mkl -heap-arrays 1024")
-		set(CMAKE_Fortran_FLAGS_DEBUG "-stand -openmp -mkl -traceback -g -fp-model source -check all -warn all -debug all -heap-arrays 1024")
-		set(CMAKE_Fortran_FLAGS_RELEASE "-stand -openmp -mkl -heap-arrays 1024")
+		set(CMAKE_Fortran_FLAGS "-stand   -heap-arrays 1024")
+		#set(CMAKE_Fortran_FLAGS "-stand -openmp -mkl -heap-arrays 1024")
+		set(CMAKE_Fortran_FLAGS_DEBUG "-stand   -traceback -g -fp-model source -check all -warn all -debug all -heap-arrays 1024")
+		set(CMAKE_Fortran_FLAGS_RELEASE "-stand  -heap-arrays 1024")
 	
 		# You can uncomment the following lines for further optimisation but doing so results will not be completely exact with original version.
 		#set(CMAKE_Fortran_FLAGS "-stand -openmp -mkl -fast")
