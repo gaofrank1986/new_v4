@@ -413,7 +413,7 @@ C
 
        DO INODE=1, NNF
 	  WRITE(102,21)     (XYZ(I,INODE), I=1, 2), 
-	1		        ET(INODE,1)+ETI(XYZ(1,INODE),XYZ(2,INODE))
+	1		        ET(INODE,1)!+ETI(XYZ(1,INODE),XYZ(2,INODE))
        ENDDO
 
 	 DO NE=1,  NELEMF
